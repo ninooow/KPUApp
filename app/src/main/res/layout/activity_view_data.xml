@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:padding="32dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ViewDataActivity">
+    <TextView
+        android:id="@+id/txt_title_add_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DETAIL DATA"
+        android:fontFamily="@font/poppins_bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="24sp"/>
+    <TextView
+        android:id="@+id/nama_pemilih"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="16dp"
+        android:text="Nino Auliya Nahara"
+        android:fontFamily="@font/poppins_regular"
+        android:background="@drawable/rect_form"
+        app:layout_constraintTop_toBottomOf="@id/txt_title_add_data" />
+    <TextView
+        android:id="@+id/nik"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="16dp"
+        android:text="123456789"
+        android:fontFamily="@font/poppins_regular"
+        android:background="@drawable/rect_form"
+        app:layout_constraintTop_toBottomOf="@id/nama_pemilih"/>
+    <TextView
+        android:id="@+id/gender"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="16dp"
+        android:text="Laki-Laki"
+        android:fontFamily="@font/poppins_regular"
+        android:background="@drawable/rect_form"
+        app:layout_constraintTop_toBottomOf="@id/nik"/>
+    <TextView
+        android:id="@+id/alamat"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="16dp"
+        android:text="Rembang"
+        android:fontFamily="@font/poppins_regular"
+        android:background="@drawable/rect_form"
+        app:layout_constraintTop_toBottomOf="@id/gender"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kembali"
+        android:background="@drawable/rect_button"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_bold"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
